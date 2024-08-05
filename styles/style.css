@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Basic selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+p, strong, span, button, input {
+    color: #03045E;
+    font-family: Poppins, sans-serif;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #03045E;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: #03045E;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
+a:hover, .social-media-links>a:hover {
+    color: #6AB3C6;
+    opacity: 0.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/* Union classes */
+
+.domains-content, .services-content, .reviews-content, .tariff-plans-content {
+    padding: 150px 0;
+}
+
+.statistics-content, .footer-info-content {
+    padding: 100px 0;
+}
+
+/* header */
+
+header {
+    background-color: #F7F8FD;
+}
+
+.header-content {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    font-weight: 500;
+}
+
+.btn-login {
+    padding: 11px 35px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background: #03045E;
+}
+
+/* main */
+
+main {
+    background: #F7F8FD;
+}
+
+.main-content {
+    padding: 121px 0 200px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 71px;
+}
+
+.main-text-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.main-text-block > h1 {
+    width: 556px;
+    font-size: 48px;
+    line-height: 68px;
+}
+
+.main-text-block > p {
+    width: 556px;
+    color: rgba(3, 4, 94, 0.50);
+}
+
+.btn-view-prices {
+    padding: 17px 38px;
+    border-radius: 5px;
+    background: #0098FF;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+/* domains */
+
+.domains-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 69px;
+}
+
+.search-domains > h3 {
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+input[type="search"] {
+    padding-left: 20px;
+    width: 466px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+}
+
+input[type="search"]::placeholder {
+    color: rgba(3, 4, 94, 0.5);
+    font-size: 16px;
+}
+
+.btn-find {
+    padding: 15px 38px 18px 38px;
+    border-radius: 0 5px 5px 0;
+    background-color: #0098FF;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 134px;
+    background-color: rgba(3, 4, 94, 0.1);
+}
+
+form {
+    display: flex;
+}
+
+.domains-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 117px;
+}
+
+.domains-wrapper:nth-of-type(2) {
+    margin-top: 32px;
+}
+
+.domains-bar h5 {
+    color: #0098FF;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.domains-bar span {
+    font-size: 14px;
+    color: rgba(3, 4, 94, 0.3);
+    font-weight: 500;
+}
+
+/* service */
+
+.services {
+    background-color: rgba(246, 246, 246, 0.4);
+}
+
+.services-content > h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 30px;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #F6F6F6;
+}
+
+.service-info > h5 {
+    font-size: 20px;
+}
+
+.service-info > p {
+    text-align: center;
+    opacity: 0.5;
+}
+
+/* reviews */
+
+.reviews-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews-content > h2 {
+    font-size: 40px;
+}
+
+.blockquotes {
+    display: flex;
+    gap: 30px;
+    margin: 60px 0 40px 0;
+}
+
+blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(246, 246, 246, 0.5);
+    width: 407px;
+    height: 263px;
+}
+
+blockquote > p {
+    width: 327px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+blockquote > span {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+blockquote > h5 {
+    margin: 30px 0 8px 0;
+    color: #03045E;
+    font-size: 20px;
+}
+
+/* statistics */
+
+.statistics {
+    background-color: #0098FF;
+}
+
+.statistics-content {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 0 30px;
+}
+
+.statistics-content > div {
+    text-align: center;
+}
+
+.statistics-content span {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Ubuntu, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.statistics-content p {
+    width: 297px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+/* tariff-plans */
+
+.tariff-plans-content > h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.tariff-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tariff-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 318px;
+    height: 593px;
+    background-color: #FFF;
+}
+
+.tariff-card > span {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 16px 0 40px 0;
+}
+
+.tariff-card > h6 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    color: #0098FF;
+}
+
+.tariff-card > p {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0.5;
+    border-bottom: 1px solid #FFF;
+    font-size: 14px;
+}
+
+.tariff-card > p > strong {
+    font-weight: 600;
+}
+
+.tariff-blue-card {
+    background-color: #0098FF;
+}
+
+.tariff-blue-card > p, .tariff-blue-card strong, .tariff-blue-card > h6, .tariff-blue-card > span {
+    color: #FFF;
+    opacity: 1;
+}
+
+.btn-buy {
+    height: 49px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #03045E;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+/* footer-info */
+
+.footer-info {
+    background-color: rgba(246, 246, 246, 0.4);
+}
+
+.footer-info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-info-content h6 {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.footer-info-content a {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.footer-services-links a, .footer-quick-links a, address > a {
+    opacity: 0.5;
+}
+
+.footer-about > p {
+    margin-top: 24px;
+    width: 297px;
+    opacity: 0.5;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social > h6:nth-of-type(2) {
+    margin: 30px 0 24px 0;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+/* footer */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
